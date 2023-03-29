@@ -1,0 +1,6 @@
+The program calculates the modulus and division result of two integer variables i and j. It will first calculate the modulus of i and j, store the result in the modresult
+variable, and then print it on the console using cout.
+In this case, the modulus of 10 and 5 is 0, so modresult will be 0 and it will be printed on the console.
+After that, the program will calculate the division of i and modresult, which is equivalent to dividing by zero. This will result in a runtime error or undefined behavior
+depending on the compiler and the platform being used.
+So, the program will print 0 for modresult but may crash or produce incorrect results for divresult.

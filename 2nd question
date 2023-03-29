@@ -1,0 +1,15 @@
+The original code has a few errors:
+
+The header file iostream.h is outdated and should be replaced with iostream.
+The main function should have a return type of int, not void.
+The insertion operator << should be used to output the value of i+j to the console, not the extraction operator >>.
+The compound assignment operator >>= should not be used to output a value to the console
+#include<iostream>
+int main()
+{
+    short i=2500, j=3000;
+    std::cout << "i+j = " << i+j << std::endl;
+    return 0;
+}
+
+

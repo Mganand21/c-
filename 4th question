@@ -1,0 +1,12 @@
+The program tries to create a pointer to a constant variable j and then dereferences the pointer to access the value of j.
+In C, the program will generate a warning at compile-time due to the attempt to assign the address of a constant variable to a pointer. However, the program will still 
+execute and print the value of j, which is 20, because C does not enforce const correctness.
+In C++, the program will generate an error at compile-time because C++ enforces const correctness, and a constant variable cannot be assigned to a non-const pointer.
+This will cause the compilation to fail.
+To fix the program in C++, the pointer should also be declared as a pointer to a constant integer as follows:
+After adding these code,
+const int j = 20;
+const int *ptr = &j;
+cout << (*ptr);
+The program will be executed in both c and c++
+

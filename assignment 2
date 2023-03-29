@@ -1,0 +1,17 @@
+The iostream header file is not included, which means that the cout object will not be recognized.
+The main function should return an int value, but it is declared as void.
+The using namespace std directive is missing, which means that the std namespace is not explicitly used.
+There is no semicolon after the first cout statement.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int i = 0;
+    i = i + 1;
+    cout << i << " ";
+    cout << i << endl;
+    return 0;
+}

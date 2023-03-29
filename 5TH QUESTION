@@ -1,0 +1,17 @@
+The program declares a variable called "new" and prints its value using printf.
+In C, the program will compile and execute without any issues because "new" is not a reserved keyword in C, and it is allowed to use it as a variable name. However,
+using "new" as a variable name in C++ is not recommended because "new" is a reserved keyword in C++, and it is used for dynamic memory allocation.
+In C++, the program will not compile because "new" is a reserved keyword in C++. This will cause a compilation error indicating that "new" is an invalid identifier.
+To fix the program in C++, the variable name "new" should be changed to a valid identifier that is not a reserved keyword. For example, we can rename it to "newInt" as
+follows:
+#include <iostream>
+using namespace std;
+int main(void) 
+{ 
+    int newInt = 5;
+    cout << newInt; 
+    return 0;
+}
+
+After using these code it can be executed in both c and c++
+
